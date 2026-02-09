@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { SpeedInsights } from '@vercel/speed-insights/vue'
+
 // SEO 优化
 useSeoMeta({
   title: '哔哩哔哩 (゜-゜)つロ 干杯~-bilibili官方',
@@ -15,6 +17,7 @@ useSeoMeta({
   <!-- Nuxt 页面路由，相当于 RouterView -->
   <!-- 缓存 10 级页面，提升用户切换体验 -->
   <NuxtPage :keepalive="{ max: 10 }" />
+  <SpeedInsights />
 </template>
 
 <style lang="scss">
